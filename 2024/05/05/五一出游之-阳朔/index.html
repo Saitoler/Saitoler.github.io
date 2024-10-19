@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Saitoler">
+
+
+
+
+
+<title>五一出游之--阳朔 | Saitoler</title>
+
+
+
+    <link rel="icon" href="/logo.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Saitoler&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Saitoler&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">五一出游之--阳朔</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Saitoler</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">May 5, 2024&nbsp;&nbsp;11:33:51</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E5%87%BA%E8%A1%8C/">出行</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>五一前请了三天假，加上周六，凑足了4天时间可以错峰出行，所以定了去桂林阳朔的车票，去见识下从小就从课本上了解到的山水甲天下之美景。 </p>
+<h3 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h3><ul>
+<li>From <strong>深圳</strong> To <strong>桂林</strong></li>
+<li>高铁</li>
+</ul>
+<p>因为之前不确定是否能请到假，所以车票是后来补定的我的，所以两人的票甚至不是同一个车。</p>
+<p>到达桂林站</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505164421862.png" class="" title="image-20240505164421862">
+
+<p>象鼻山</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505164550758.png" class="" title="image-20240505164550758">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505164626756.png" class="" title="image-20240505164626756">
+
+<p>晚上去吃饭的路上遇到李宗仁官邸， 当天闭馆没能进去。</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505164804946.png" class="" title="image-20240505164804946">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505164822087.png" class="" title="image-20240505164822087">
+
+<p>日月双塔</p>
+<p>人造景区，也是国家五A级景区</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505165008747.png" class="" title="image-20240505165008747">
+
+<p>晚上有遇到专业团队拍摄，小姐姐真漂亮</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505165051942.png" class="" title="image-20240505165051942">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505165117347.png" class="" title="image-20240505165117347">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505165134868.png" class="" title="image-20240505165134868">
+
+<h3 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h3><ul>
+<li>From <strong>桂林</strong> To <strong>阳朔</strong></li>
+<li>游轮</li>
+</ul>
+<h4 id="漓江"><a href="#漓江" class="headerlink" title="漓江"></a>漓江</h4><p>乘坐游轮，一路溯江而下，江是漓江，只是这与我固有印象中的漓江水差别太大了。“漓江的水真绿啊”， “漓江的水真清啊”，来看看真实的漓江水</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505165515518.png" class="" title="image-20240505165515518">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505165555158.png" class="" title="image-20240505165555158">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505165657686.png" class="" title="image-20240505165657686">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505165727784.png" class="" title="image-20240505165727784">
+
+<p>江中时而有这种大片的<strong>渚</strong>，一直在想如果在这里住一晚，露营想必也是极好的。</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505165828078.png" class="" title="image-20240505165828078">
+
+<blockquote>
+<p>奇山异水，天下独绝</p>
+</blockquote>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505165954915.png" class="" title="image-20240505165954915">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505170109497.png" class="" title="image-20240505170109497">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505170138366.png" class="" title="image-20240505170138366">
+
+<p>漓江上最著名的景点之一  —— 九马画山。 你能数出来九匹马吗？反正我没能。</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505170255308.png" class="" title="image-20240505170255308">
+
+<p>二十元人民币背景打卡点，我这组图拍的还是很还原的，有人民币这张是借过来的同船小姐姐的角度。</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505170502610.png" class="" title="image-20240505170502610">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505170529498.png" class="" title="image-20240505170529498">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505170628887.png" class="" title="image-20240505170628887">
+
+<p>这独绝的山水，是真能让人忘掉烦恼，将身心彻底沉浸在靓丽风景之中的。</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505170752801.png" class="" title="image-20240505170752801">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505170816957.png" class="" title="image-20240505170816957">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505170838407.png" class="" title="image-20240505170838407">
+
+<p>靠岸啦，抵达阳朔码头。</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505170914235.png" class="" title="image-20240505170914235">
+
+<h4 id="十里画廊"><a href="#十里画廊" class="headerlink" title="十里画廊"></a>十里画廊</h4><p>下午2点多抵达阳朔，短暂休整后，4点出门。酒店楼下有租电动车的，因为错峰，只要20块一天，于是直接两人一车去十里画廊放风。</p>
+<p>这里是工农桥的风景，对于当地人我只有羡慕两个字，随手拍都是大片。</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505171151021.png" class="" title="image-20240505171151021">
+
+<p>对于北方人来说从来没见过水田，北方田里有水从来只有开渠灌溉时才有的场景，第一次见到现实中的水田，震撼！</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505171342928.png" class="" title="image-20240505171342928">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505171644772.png" class="" title="image-20240505171644772">
+
+<p>来看看今天的坐骑，给我家领导打码保护下隐私</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505171610671.png" class="" title="image-20240505171610671">
+
+<p>这是路上偶尔找到的视角，远山的倒影，加上头顶树枝的倒影，二者相得益彰，太美了。</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505171800952.png" class="" title="image-20240505171800952">
+
+<p>这个水比漓江的水清太多了，加上夕阳余晖，浑然天成。</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505171934081.png" class="" title="image-20240505171934081">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505172003086.png" class="" title="image-20240505172003086">
+
+<p>田间地头，随手都是仙境，这你受得了？</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505172218360.png" class="" title="image-20240505172218360">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505172045582.png" class="" title="image-20240505172045582">
+
+<p>人生第一次遇见羊驼，这只一看就是被宠爱的，主人家给收拾的真很干净</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505172146445.png" class="" title="image-20240505172146445">
+
+<h4 id="西街"><a href="#西街" class="headerlink" title="西街"></a>西街</h4><p>这里第一眼还以为是要进宫面圣了呢，贵气拉满哈哈哈</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505172316741.png" class="" title="image-20240505172316741">
+
+<p>益田西街入口</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505172421384.png" class="" title="image-20240505172421384">
+
+<p>桂林米粉很好吃，作为一个关中人吃面长大的表示第一次吃桂林米粉直接吃了六两！而且价钱很划算，一份不到6块（2两）。</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505172559370.png" class="" title="image-20240505172559370">
+
+<p>顺便说一句，西街没什么好逛的，到处是同质化的 xx 啤酒鱼，酒吧等，你不如改名叫《啤酒鱼一条街》</p>
+<h3 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h3><ul>
+<li>如意峰</li>
+<li>银子岩</li>
+</ul>
+<h4 id="如意峰"><a href="#如意峰" class="headerlink" title="如意峰"></a>如意峰</h4><p>如意峰以其山顶状如如意而得名，但这个视角需要航拍估计才能看到了。如意峰是近几年才开发的景区，上下除了缆车没有其他途径，这就导致上山后的景点有点乏善可陈。但从如意峰上看四周，能看到那种如中国画的古风写意工笔画的感觉，远处的山峰此起彼伏。</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505215822496.png" class="" title="image-20240505215822496">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505215846946.png" class="" title="image-20240505215846946">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505215933371.png" class="" title="image-20240505215933371">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505220001411.png" class="" title="image-20240505220001411">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505220040869.png" class="" title="image-20240505220040869">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505220128523.png" class="" title="image-20240505220128523">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505220217993.png" class="" title="image-20240505220217993">
+
+<h4 id="银子岩"><a href="#银子岩" class="headerlink" title="银子岩"></a>银子岩</h4><p>这里景点是因为喀斯特地貌形成的溶洞，溶洞景观主靠灯光及个人丰富的想象力，尽情的发挥想象力吧~<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505220834500.png" class="" title="image-20240505220834500"></p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505220803566.png" class="" title="image-20240505220803566">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505220914774.png" class="" title="image-20240505220914774">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505220940659.png" class="" title="image-20240505220940659">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505221012162.png" class="" title="image-20240505221012162">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505221059350.png" class="" title="image-20240505221059350">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505221138473.png" class="" title="image-20240505221138473">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505221213457.png" class="" title="image-20240505221213457">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505221335976.png" class="" title="image-20240505221335976">
+
+<h3 id="Day4"><a href="#Day4" class="headerlink" title="Day4"></a>Day4</h3><ul>
+<li>富里桥</li>
+<li><del>漂流 – 未能成行，被连夜及大早的暴雨抬高河床10公分，遇龙河漂流全线停运</del></li>
+</ul>
+<p>富里桥作为网红打卡地，其实我们一开始是没打算去的。之所以去了是因为本来第四天准备去漂流，奈何前一天晚上的大暴雨直接导致遇龙河漂流全线停运，所以我们准备下午去这里看下，万一开了呢？</p>
+<p>当然，因为大暴雨导致的水面上涨、河水变浑，富里桥也没能拍出网上流传出的神图模样。</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505222347749.png" class="" title="image-20240505222347749">
+
+<p>借用船家的鸬鹚拍的这张是我觉得最好的一张，有种莫名的和谐感</p>
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505222445105.png" class="" title="image-20240505222445105">
+
+<img src="/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/image-20240505222533183.png" class="" title="image-20240505222533183">
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Saitoler</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://saitoler.github.io/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/">https://saitoler.github.io/2024/05/05/%E4%BA%94%E4%B8%80%E5%87%BA%E6%B8%B8%E4%B9%8B-%E9%98%B3%E6%9C%94/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2024 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>曾把百万睡魔都战倒 使我一身风骨倍精神</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Travel/"># Travel</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2024/10/18/%E8%80%81%E7%A2%97%E4%BC%9A%E8%B0%88/">老碗会谈</a>
+            
+            
+            <a class="next" rel="next" href="/2024/02/20/%E6%98%A5%E8%8A%82%E5%87%BA%E6%B8%B8%E4%B9%8B-%E7%8F%A0%E6%B5%B7/">春节出游之--珠海</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Saitoler | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
